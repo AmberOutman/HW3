@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/main.css"/>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container"> 
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center">Password Generator</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" id="passbox">
+                <h2>Generate Password</h2>
+                <hr/>
+          
+                <pre class="text-center text-muted" id="passarea">Your Secure Password</pre>
+                  <hr/> 
+                    <div class="form-group">
+                      <label>length</label>
+                      <input type="number" class="form-control" id="password-length"/>
+                    </div>
+                    <div class="form-check"> 
+                      <input type="checkbox" class="form-check-input" id="special"/>
+                      <label class="form-check-label" for="special">use special characters</label>
+                    </div>
+                    <div class="form-check"> 
+                      <input type="checkbox" class="form-check-input" id="numeric"/>
+                      <label class="form-check-label" for="numeric">use numeric characters</label>
+                    </div>
+                    <div class="form-check"> 
+                      <input type="checkbox" class="form-check-input" id="uppercase"/>
+                      <label class="form-check-label" for="uppercase">use uppercase characters</label>
+                    </div>
+                    <div class="form-check"> 
+                      <input type="checkbox" class="form-check-input" id="lowercase"/>
+                      <label class="form-check-label" for="lowercase">use lowercase characters</label>
+                    </div>
+                  <hr/>
+                <div class="row">
+                  <div class="col-12 col-md">
+                     <button type="button" class="btn" id="genpass" onclick="generatePassword()">Generate Password</button>
+                  </div>
+                  <div class="col-12 col-md"> 
+                    <button disabled type="button"  class="btn btn-secondary" id="copy"> Copy to Clipboard</button>
+                  </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="assets/main.js"></script>
+  </body>
+</html>

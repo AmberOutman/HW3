@@ -1,0 +1,26 @@
+body{
+    background-color:#f9fbfd;
+}
+#passbox{
+    background-color: white;
+    box-shadow: 0 0 5px #cccccc;
+    padding: 25px;
+    border-radius: 5px;
+}
+#passarea{
+    border: 2px dashed #cccccc;
+    border-radius: 5px;
+    padding: 3px;
+    height: 7em;
+}
+#genpass{
+    background-color: #af0808;
+    color: white;
+    border-radius: 20px;
+}
+#genpass:hover{
+    background-color: #920707;
+}
+#copy{
+    border-radius: 20px;
+}
